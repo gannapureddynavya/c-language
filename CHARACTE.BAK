@@ -1,0 +1,10 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+chr character;
+clrscr();
+printf("enter the character:");
+scanF("%c",&character);
+printf("the given character is%c",character);
+}
