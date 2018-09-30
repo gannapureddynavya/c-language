@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int n,d,sum=0;
+clrscr();
+printf("enter n value");
+scanf("%d",&n);
+while(n!=0)
+{
+d=n%10;
+sum=sum+(d*d*d);
+n=n/10;
+}
+if(sum==n)
+{
+printf("the no.is amstrong is %d",);
+}
+else
+{
+printf("the no is not amstrong is %d",);
+}
+}
