@@ -3,9 +3,10 @@
 void main()
 {
 int i,j;
-for(i=0;i<=5;i++)
+clrscr();
+for(i=1;i<=5;i++)
 {
-for(j=65;j<=69-i;j++)
+for(j=65;j>=69-i;j++)
 {
 printf("%c",j);
 }
