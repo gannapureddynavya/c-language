@@ -2,28 +2,33 @@
 #include<conio.h>
 void main()
 {
-int a[5],i,j,m,fact,sum;
+int a[5],i,j,fact,m,sum,temp;
 clrscr();
 for(i=0;i<5;i++)
-{
-printf("enter the elements of [%d] value:",i);
-scanf("%d",&a[i]);
+	{
+	printf("enter the elements of [%d]:",i);
+	scanf("%d",&a[i]);
 }
-for(i=0;i<5;i++)
+	for(i=0;i<5;i++)
+	{
+	temp=a[i];
+	sum=0;
+	while(temp!=0)
+	{
+	fact=1;
+	m=temp%10;
+	for(j=1;j<=m;j++)
+	{
+	fact=fact*j;
+	}
+	sum=sum+fact;
+	temp=temp/10;
+	}
+    if(sum==a[i])
 {
-fact=1;
-sum=0;
-m=i;
-for(j=0;j<a[i];j++)
-{
-fact=fact*j;
-m=m/10;
-sum=sum+fact;
-}
-if(sum==a[i])
-{
-printf("the strong no.s in the array are %d:",a[i]);
-}
-printf("\n");
-}
+printf("the strong no.s in the array are ");
+printf("%d\n",a[i]);
+	}
+   }
+
 }

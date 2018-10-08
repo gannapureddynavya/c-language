@@ -10,19 +10,21 @@ printf("enter the elements of [%d]:",i);
 scanf("%d",&a[i]);
 }
 for(i=0;i<5;i++)
-{
+	{
 count=0;
 for(j=2;j<a[i];j++)
-{
-
+    {
 if(a[i]%j==0)
 {
-count++;
-}
+count=1;
+	}
+     }
+
+
 if(count==0)
-{
-printf(" %d",a[i]);
-}
-}
-}
+	{
+	printf(" the prime no.s in the array are :");
+ printf("%d\n",a[i]);
+	}
+  }
 }
